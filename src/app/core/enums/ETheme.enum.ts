@@ -1,5 +1,10 @@
 export enum ETheme {
-    ICON_MON = "moon",
-    ICON_SUN = "sun"
+    ICON_MOON = "moon",
+    ICON_SUN = "sun",
+
+    ICON_SUN_INFO = "Ligth theme mode",
+    ICON_MOON_INFO = "Dark theme mode"
+
+
 
 }
