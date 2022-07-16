@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500;600&family=Open+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    button {
+      background: none;
+      cursor: pointer;
+    }
+  }
+  
+  :root {
+    --primary: #1976d2;
+    --body: #fff;
+    --text-menu: #fff;
+    --text-body: #4b4b4b;
+  }
+  
+  :root .dark-theme {
+    --primary: #0d47a1;
+    --body: #4b4b4b;
+    --text-menu: #fff;
+    --text-body: #fff;
+  }
+  
+  body {
+    background-color: var(--body);
+  }
+  
