@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ETheme } from '../../enums/ETheme.enum';
 
 @Component({
   selector: 'app-header',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  
-  public icon:string = "sun"
+
+  public icon: string = ETheme.ICON_SUN
 
   constructor() { }
 
@@ -15,12 +16,12 @@ export class HeaderComponent implements OnInit {
   }
 
   public toggle() {
-   const themes = document.body.classList.toggle('dark-theme')
+    const themes = document.body.classList.toggle('dark-theme')
 
-   if(themes){
-     return this.icon = 'moon'
-   }
+    if (themes) {
+      return this.icon = ETheme.ICON_MON
+    }
 
-   return this.icon = 'sun'
+    return this.icon = ETheme.ICON_SUN
   }
 }
