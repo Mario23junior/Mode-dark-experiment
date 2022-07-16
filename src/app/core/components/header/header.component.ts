@@ -20,9 +20,10 @@ export class HeaderComponent implements OnInit {
     const themes = document.body.classList.toggle('dark-theme')
 
     if (themes) {
+      this.textTheme = ETheme.TEXT_MOON_INFO
       return this.icon = ETheme.ICON_MOON
     }
-
+    this.textTheme = ETheme.TEXT_SUN_INFO
     return this.icon = ETheme.ICON_SUN
   }
 }
